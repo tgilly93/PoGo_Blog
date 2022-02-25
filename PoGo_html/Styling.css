@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "hd hd hd hd hd hd hd hd hd" 
+                         "sd sd sd main main main main main main"
+                         "ft ft ft ft ft ft ft ft ft"
+}
+
+.header {
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.box {
+    border: 1px solid blue;
+}
